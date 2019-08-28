@@ -1,0 +1,14 @@
+// views/movie-add.hbs
+<h2>Upload a new Movie</h2>
+<form action="/movie/add" method="post" enctype="multipart/form-data">
+  <label>Title</label>
+  <input type="text" name="title" required>
+
+  <label>Description</label>
+  <input type="text" name="description" required>
+
+  <label>Poster</label>
+  <input type="file" name="photo" required>
+
+  <input type="submit" value="SAVE" require>
+</form>
